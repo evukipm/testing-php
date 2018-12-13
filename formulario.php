@@ -7,7 +7,7 @@
   <title>Formulario</title>
 </head>
 <body>
-  <form action="" method="post" name="datos_usuario" id="datos_usuario">
+  <form action="validacion.php" method="post" name="datos_usuario" id="datos_usuario">
     <table width="15%" align="center">
       <tr>
         <td>Nombre:</td>
@@ -28,21 +28,5 @@
       </tr>
     </table>
   </form>
-  <?php
-
-    if(isset($_POST["enviando"])){
-      
-      $usuario = $_POST["nombre_usuario"];
-      $edad = intval($_POST["edad_usuario"]);
-      
-      if($usuario && $edad){
-          echo "Bienvenido, $usuario. Veo que tienes $edad años.";
-      }
-      else{
-          echo 'Completa los campos, por favor.';
-      }
-    }
-
-  ?>
 </body>
 </html>
