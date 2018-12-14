@@ -25,7 +25,25 @@
       'MOTO GP'
     ]
   ];
-
-  print_r($tabla);
-
+  
+  function creaTabla($cantidad, $array){
+    for($x = 0; $x < $cantidad; $x++){
+      echo '<tr>';
+        for($i = 0; $i < count($array); $i++){
+          echo '<td>'.$array[array_keys($array)[$i]][$x].'</td>';
+        }
+      echo '</tr>';
+    }
+  }
 ?>
+
+<table border="1">
+  <tr>
+    <?php
+      foreach($tabla as $key => $item){
+        echo '<th>'.$key.'</th>';
+      }
+    ?>
+  </tr>
+  <?= creaTabla(3, $tabla); ?>
+</table>
