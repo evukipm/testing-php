@@ -1,4 +1,32 @@
-.resaltar{
-  color:red;
-  font-weight: bold;
+body{
+  height:100vh;
+  overflow:hidden;
+  margin:0;
+  padding:0;
+}
+nav{
+  height:10vh;
+  display:flex;
+  justify-content: flex-end;
+  align-content: center;
+  margin:0;
+  padding:10px 40px;
+}
+footer{
+  height:10vh;
+  background:black;
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  margin:0;
+  padding:10px 0;
+}
+.content{
+  height:80vh;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  overflow:auto;
+  padding:20px;
 }
