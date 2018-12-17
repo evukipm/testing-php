@@ -23,6 +23,12 @@
       'FIFA',
       'NBA',
       'MOTO GP'
+    ],
+    'RPGS' => [
+      'Final Fantasy',
+      'D&D',
+      'The Witcher',
+      'WoW'
     ]
   ];
   
